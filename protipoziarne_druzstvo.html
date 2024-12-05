@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reklamná Kampaň</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+	<header>
+		<div id="logo_sekcia"><a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a></div>
+	<nav>
+		
+		<ul class="sidebar">
+			<a href="#"><img class="kriz" onClick="hideSidebar()" src="img/kriz.png" alt=""></a>
+		<li><a href="o_mne.html">O mne</a></li>
+		<li><a href="porfolio.html">Portfólio</a></li>
+		<li><a href="#kontakt">Kontakt</a></li>
+		</ul>
+
+	
+		<ul>
+		<li class="hideOnMobile"><a href="o_mne.html">O mne</a></li>
+		<li class="hideOnMobile"><a href="porfolio.html">Portfólio</a></li>
+		<li class="hideOnMobile"><a href="#kontakt">Kontakt</a></li>
+		<li class="menu-button" onClick="showSidebar()"><a href="#"><img class="navigacia" src="img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>	
+		</ul>
+	
+	
+		</nav>
+	<div id="socialne_siete">
+		<a href="https://www.facebook.com/fifo.jur.7" target="_blank"><img class="siete" src="img/facebook.png" alt="facebook"></a>
+		<a href="https://www.instagram.com/cashtenn/" target="_blank"><img class="siete" src="img/instagram.png" alt="instagram"></a>
+		</div>
+	</header>
+	<section id="obal_protipoziarne">
+		
+		<div class="obal_text_protipoziarne">
+		<h2>Reklamná kampaň</h2>
+		
+			<p class="text_3d">V rámci spolupráce s firmou Protipožiarne družstvo som vytvoril dva rôzne dizajny bannerov pre sociálne siete, zamerané na zvýšenie povedomia o požiarnej bezpečnosti. Prvý návrh má vektorový štýl, ktorý je čistý a moderný, a sústreďuje sa na prevenciu požiarov pomocou jednoduchých symbolov a priamych sloganov. </p>
+			<br>
+			<p class="text_3d">Druhý dizajn má realistickejší prístup – zobrazuje hasiaci prístroj medzi horiacimi bytovkami na svetlomodrom pozadí, čo symbolizuje ochranu a záchranu v kritických situáciách. Tento vizuál má upútať pozornosť a evokovať dôležitosť okamžitej ochrany. Každý banner bol navrhnutý s cieľom osloviť široké publikum a zvýšiť záujem o preventívne opatrenia, ktoré Protipožiarne družstvo ponúka.</p>
+			
+	</div>
+	
+	</section>	
+		<section id="obal_posty_protipoziarne">
+	
+ <img class="protipoziarne_post" src="img/protipoziarne-druzstvo-banner.jpg" alt="príspevok_na_socialne_siete">
+ <img class="protipoziarne_post" src="img/protipoziarne-druzstvo-banner-2.jpg" alt="príspevok_na_socialne_siete">
+
+		</section>
+		
+<section id="kontakt">
+		<h1>Ozvite sa, ak vás niečo zaujalo</h1>
+	<form action="https://api.web3forms.com/submit" method="POST" id="formular">
+		<input type="hidden" name="access_key" value="a4350b38-d685-42ea-b339-1a3ac90ed127">
+	<div id="vlavo"><textarea name="Meno" class="formular" placeholder="Meno"></textarea>
+	<textarea name="email" class="formular" placeholder="Gmail"></textarea></div>
+		
+	<div id="vpravo"><textarea name="sprava" class="sprava" placeholder="Správa"></textarea>	
+		
+		<button>Odoslať email</button>
+		</div>
+	</form>
+		</section>
+		
+	<footer>
+		<p class="autor">&copy; 2024 Jurkovič Filip</p>
+		
+		<p><a class="hlavicka" href="o_mne.html">O mne</a>
+		<a class="hlavicka" href="porfolio.html">Portfólio</a>
+		<a class="hlavicka" href="#kontakt">Kontakt</a>
+		</p>
+		</footer>
+	
+	</div>
+	
+
+	<script>
+	function showSidebar(){
+		const sidebar = document.querySelector('.sidebar')
+		sidebar.style.display = 'flex'
+	}
+			function hideSidebar(){
+		const sidebar = document.querySelector('.sidebar')
+		sidebar.style.display = 'none'
+	}
+	</script>
+</body>
+</html>

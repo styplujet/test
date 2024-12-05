@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+	<header>
+		<div id="logo_sekcia"><a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a></div>
+	<nav>
+		
+		<ul class="sidebar">
+			<a href="#"><img class="kriz" onClick="hideSidebar()" src="img/kriz.png" alt=""></a>
+		<li><a href="o_mne.html">O mne</a></li>
+		<li><a href="porfolio.html">Portfólio</a></li>
+		<li><a href="#kontakt">Kontakt</a></li>
+		</ul>
+
+	
+		<ul>
+		<li class="hideOnMobile"><a href="o_mne.html">O mne</a></li>
+		<li class="hideOnMobile"><a id="hlavicka_portfolio" href="porfolio.html">Portfólio</a></li>
+		<li class="hideOnMobile"><a href="#kontakt">Kontakt</a></li>
+		<li class="menu-button" onClick="showSidebar()"><a href="#"><img class="navigacia" src="img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>	
+		</ul>
+	
+	
+		</nav>
+	<div id="socialne_siete">
+		<a href="https://www.facebook.com/fifo.jur.7" target="_blank"><img class="siete" src="img/facebook.png" alt="facebook"></a>
+		<a href="https://www.instagram.com/cashtenn/" target="_blank"><img class="siete" src="img/instagram.png" alt="instagram"></a>
+		</div>
+	</header>
+	
+	
+	<section id="obal_vyber_sekcii">
+		<h2>Portfólio</h2>
+		<div class="vyber_jedna">
+		<a href="3d_animacia.html"><div class="sekcia"><img class="obrazok" src="img/3d_animacia.png" alt=""><h4>3D Animácia</h4>
+			<p class="podnadpis_vyber">Školska prax</p></div></a>
+			
+			<a href="animacia_loga.html"><div class="sekcia"><img class="obrazok" src="img/animacia_loga.png" alt=""><h4>Animácia loga</h4>
+			<p class="podnadpis_vyber">Finančná spoločnosť</p></div></a>
+			
+			<a href="ebooks.html"><div class="sekcia"><img class="obrazok" src="img/kniha.jpg" alt=""><h4>Návrhy na elektronické knižky</h4>
+			<p class="podnadpis_vyber">Finančná spoločnosť</p></div></a>
+		</div>
+		<div class="vyber_dva">
+			
+<a href="protipoziarne_druzstvo.html"><div class="sekcia">
+			<img class="obrazok" src="img/protipoziarne-druzstvo-banner.jpg" alt=""><h4>Reklamná Kampaň</h4>
+			<p class="podnadpis_vyber">Protipožiarne družstvo</p></div></a>
+			
+				<a href="opp_druzstvo.html"><div class="sekcia">
+					<img class="obrazok" src="img/banne_opp_poziar.jpg" alt=""><h4>Reklamná Kampaň</h4>
+			<p class="podnadpis_vyber">Opp družstvo</p></div></a>
+			
+				<a href="skolska_prax.html"><div class="sekcia">
+					<img class="obrazok" src="img/2.prispevok.jpg" alt=""><h4>Reklamná kampaň</h4>
+			<p class="podnadpis_vyber">Školska prax</p></div></a>
+			
+		</div>
+		
+	</section>
+		
+		<section id="obal_portfolio">
+		
+		<div id="obal_text_portfolio">
+		
+			<div id="obal_text_podnadpis">
+			<p class="text_portfolia">V mojom portfóliu nájdete široké spektrum projektov, ktoré odrážajú moje zručnosti a kreativitu.
+				<br>
+				<br>
+<h5>Špecializujem sa na:</h5>
+
+<p class="list_portfolio">- 3D animácie: Vytváram dynamické 3D animácie, ktoré oživujú vaše nápady.</p>
+
+<p class="list_portfolio">- Animácie v Adobe After Effects: Realizujem pútavé animácie, ktoré zaujmú a zanechajú dojem.</p>
+
+<p class="list_portfolio">- Reklamné kampane: Navrhujem rôzne typy reklám, ktoré efektívne komunikujú vaše posolstvo.</p>
+
+<p class="list_portfolio">- Dizajn pre webové stránky: Vytváram estetické a funkčné dizajny, ktoré zlepšujú používateľský zážitok.</p>
+
+<p class="text_portfolia">Pre viac informácií o mojich projektoch a službách sa neváhajte ozvať!</p></p></div>
+		</div>
+		</section>
+<section id="kontakt">
+		<h1>Ozvite sa, ak vás niečo zaujalo</h1>
+	<form action="https://api.web3forms.com/submit" method="POST" id="formular">
+		<input type="hidden" name="access_key" value="a4350b38-d685-42ea-b339-1a3ac90ed127">
+	<div id="vlavo"><textarea name="Meno" class="formular" placeholder="Meno"></textarea>
+	<textarea name="email" class="formular" placeholder="Gmail"></textarea></div>
+		
+	<div id="vpravo"><textarea name="sprava" class="sprava" placeholder="Správa"></textarea>	
+		
+		<button>Odoslať email</button>
+		</div>
+	</form>
+		</section>
+		
+	<footer>
+		<p class="autor">&copy; 2024 Jurkovič Filip</p>
+		
+		<p><a class="hlavicka" href="o_mne.html">O mne</a>
+		<a class="hlavicka" href="porfolio.html">Portfólio</a>
+		<a class="hlavicka" href="#kontakt">Kontakt</a>
+		</p>
+		</footer>
+	
+	</div>
+	
+
+	<script>
+	function showSidebar(){
+		const sidebar = document.querySelector('.sidebar')
+		sidebar.style.display = 'flex'
+	}
+			function hideSidebar(){
+		const sidebar = document.querySelector('.sidebar')
+		sidebar.style.display = 'none'
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,756 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+hmtl {
+	scroll-behavior: smooth;
+}
+#wrap {
+	width: 100%;
+	height: auto;
+}
+header{
+	width: 100%;
+	height: 120px;
+	background-color: black; 
+	
+	display: flex;
+	justify-content: space-between;
+	
+}
+nav {
+	width: 70%;
+	height: 90px;
+	margin: auto;
+	
+	font-size: 15pt;
+	text-align: center;
+	padding-top: 25px;
+	font-family:"Montserrat Black";
+}
+.navigacia {
+	width: 40%;
+	position: relative;
+	top:10px;
+}
+.kriz {
+	width: 20%;
+	margin-right: 80px;
+	
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding-right: 55px;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color:rgba(0,0,0,0.82);
+	backdrop-filter: blur(10px);
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding-top: 25px;
+	 animation-name: example;
+	 
+  animation-duration: 2s;
+}
+.sidebar li {
+	margin-top: 55px;
+	width: 100%;
+	position: relative; 
+	right: 30px;
+}
+.sidebar a {
+	width: 100%;
+}
+@media(max-width: 800px){
+	.hideOnMobile {
+		display: none;
+	}
+	.menu-button {
+	display: inline-block;
+}
+	
+	
+}
+@keyframes example {
+  0%   { right:-150px; top:0px;}
+  100% { right:0px; top:0px;}
+}
+
+@media(max-width: 400px) {
+	.sidebar {
+		width: 100%;
+	}
+}
+.pozadie_sidebar {
+	width: 100%;
+	transition: 2s;
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 65px;
+	line-height: 20px;
+	position:relative;
+}
+a {
+	text-decoration: none;
+	font-size: 17pt;
+	color: white;
+	
+}
+li:after {
+	content: "";
+	position: absolute;
+	background-color:rgba(55,158,60,1.00);
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -10px;
+	transition: 0.4s;
+}
+li:hover {
+	color: #A9A9A9;
+}
+li:hover:after {
+	width: 100%;
+}
+#logo_sekcia {
+	width: 280px;
+	padding-top: 20px;
+	padding-left: 20px;
+	
+}
+#logo {
+	width: 25%;
+}
+@media (max-width: 700px) {
+	#logo {
+		width: 30%;
+	}
+	.sidebar {
+		width: 40%;
+		
+	}
+	.text_bar {
+		font-size: 15px;
+	}
+	.siete {
+		display: inline-block;
+	}
+	
+}
+#socialne_siete {
+	width: 250px;
+	padding-top: 30px;
+	padding-left: 10px;
+	
+}
+.siete {
+	width: 20%;
+	margin-left: 55px;
+}
+#jedna {
+  
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../img/knihkupectvo.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+	z-index: -1;
+}
+#uvod {
+	width: 100%;
+	height: auto;
+	
+}
+
+#kontakt {
+	width: 100%;
+	height: 250px;
+	background-color: black;
+	
+}
+h1 {
+	color:white;
+	padding: 15px;
+}
+#formular {
+width: 100%;
+	
+}
+#vlavo {
+	width: 50%;
+	float:left;
+	
+}
+#vpravo {
+	width: 50%;
+	
+	float: right;
+	padding-bottom: 55px;
+	display: flex;
+	align-items: flex-end;
+}
+.formular {
+	width: 40%;
+	height: 25px;
+	display: block;
+	margin-top: 25px;
+	margin-left: 35px;
+	border-radius: 5px;
+	padding: 5px;
+	background: transparent;
+	border: 2px #707070 solid;
+	color:white;
+	transition: 2s;
+	
+}
+.formular::placeholder {
+	color:white;
+}
+.formular:hover {
+	background: #707070;
+}
+.formular:active {
+	background: #707070;
+}
+.sprava {
+	width: 100%;
+	height: 95px;
+	display: block;
+	margin-top: 25px;
+	margin-left: 15px;
+	border-radius: 5px;
+	padding: 5px;
+	background: transparent;
+	border: 2px #707070 solid;
+	color:white;
+	transition: 2s;
+	
+}
+.sprava::placeholder {
+	color:white;
+}
+.sprava:hover {
+	background: #707070;
+}
+.sprava:active {
+	background: #707070;
+}
+button {
+	width: 30%;
+	height: 35px;
+	position: relative;
+	top: 50px;
+	right:35px;
+	border-radius: 5px;
+	background: transparent;
+	border: 2px #707070 solid;
+	color:white;
+	cursor: pointer;
+	transition: 2s;
+}
+button:hover {
+	background:rgba(116,248,91,1.00);
+}
+button:active {
+	background: rgba(116,248,91,1.00);
+}
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: #0A0A0A;
+}
+.autor {
+	color:white;
+	font-size: 9pt;
+	float:left;
+	padding-top: 10px; 
+	padding-left: 10px;
+}
+
+.hlavicka {
+	color:white;
+	font-size: 9pt;
+	float:right;
+	margin-left: 10px;
+	padding-right: 50px;
+	padding-top: 10px;
+}
+/*------------------------------------------------------------- O mne -------------------------------------------------------------------------------------------------*/
+#hlavicka_omne {
+	color: #A9A9A9;
+}
+#obal_o_mne {
+	width: 100%;
+	height: auto;
+	
+}
+#o_mne {
+	width: 70%;
+	height: 350px;
+	text-align: center;
+	margin:auto;
+	margin-top: 5%;
+	
+}
+h2 {
+	font-size: 38px;
+	font-family: "Montserrat Black";
+	padding-top: 0px;
+	padding-left: 15px;
+}
+.text_o_mne {
+	font-size: 17px;
+	padding-top: 25px;
+	line-height: 25px;
+	font-weight: 400;
+}
+#zrucnosti {
+	width: 70%;
+	height: 80%;
+	text-align: center;
+	margin:auto;
+	
+}
+@media (max-width:700px) {
+	#zrucnosti {
+		width: 90%;
+		height: 350px;
+	}
+	.text_o_mne {
+		font-size: 12px;
+	}
+	
+}
+#obrazok_zrucnosti {
+	width: 90%;
+	margin-top: 0px;
+	
+}
+/*------------------------------------Portfólio-----------------------------------------------------------*/
+#hlavicka_portfolio {
+	color: #A9A9A9;
+}
+#obal_portfolio {
+	width: 100%;
+	height: auto;
+	
+}
+#obal_text_podnadpis {
+	width: 70%;
+	padding-left: 50px;
+	padding-top: 10px;
+	font-weight: 400;
+	
+}
+#obal_text_portfolio {
+	width: 80%;
+	height: 50%;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	padding: 10px;
+	font-weight: 400;
+}
+.text_portfolia {
+	font-size: 14pt;
+	
+}
+.list_portfolio{
+	display: block;
+	line-height: 35px;
+}
+
+#obal_vyber_sekcii {
+	width: 100%;
+	height: auto;
+	margin-top: 25px;
+	
+}
+.vyber_jedna {
+	width: 100%;
+	max-width: 1366px;
+	height: auto;
+	
+	margin:auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+
+}
+.vyber_dva {
+	width: 100%;
+	max-width: 1366px;
+	height: auto;
+	
+	margin:auto;
+	margin-top: 35px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+.sekcia {
+	width: 70%;
+	height: auto;
+	background-color:rgba(206,206,206,1.00);
+	margin:auto;
+	border-radius: 15px;
+	transition: 2s;
+}
+.sekcia:hover {
+	transform: scale(0.9);
+	
+}
+.obrazok {
+	width: 100%;
+	height: 100%;
+	max-height: 521px;
+	max-width: 628px;
+}
+h4 {
+	font-family: "Montserrat Black";
+	font-size: 16px;
+	padding: 5px;
+	
+	color:rgba(50,50,50,1.00);
+}
+h5 {
+	font-family: "Montserrat Black";
+	font-size: 16px;
+	padding: 5px;
+	
+	color:black;
+}
+.podnadpis_vyber {
+	font-size: 12px;
+	padding-left: 5px;
+	padding-bottom: 6px;
+	color:rgba(50,50,50,1.00);
+}
+
+@media (max-width: 700px) {
+	.podnadpis_vyber {
+		font-size: 5px;
+	}
+	h4 {
+		font-size: 6px;
+		
+	}
+	h5 {
+		font-size: 12px;
+	}
+	.list_portfolio {
+		line-height: 26px;
+		
+	}
+	.text_portfolia {
+	font-size: 7px;
+	
+}
+
+}
+/*-----------------------------------------------------3D animácia---------------------------------------------------------------------------*/
+
+
+#obal_3d_full {
+	width: 100%;
+	height: auto;
+	
+}
+#obal_3d_animacia {
+	width: 65%;
+	height: 50%;
+	margin-top: 25px;
+	padding: 10px;
+}
+@media (max-width: 700px) {
+	#obal_3d_animacia {
+		width: 90%;
+	}
+}
+.text_3d {
+	padding-top: 15px;
+	padding-left: 25px;
+	font-size:17px;
+	font-weight: 400;
+	line-height: 20px;
+}
+#video_3d_obal {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 35px;
+	margin-top: 35px;
+}
+.video_3d {
+	width: 70%;
+}
+/*------------------------------------------------Animácia loga-----------------------------------------------------------------------------------------*/
+
+#obal_animacia_full {
+	width: 100%;
+	height: auto;
+	
+}
+#obal_logo_animacia {
+	width: 65%;
+	height: 50%;
+	margin-top: 25px;
+	padding: 10px;
+}
+@media (max-width: 700px) {
+	#obal_logo_animacia {
+		width: 90%;
+	}
+}
+#video_logo_obal {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 35px;
+	margin-top: 35px;
+}
+.video_logo {
+	width: 70%;
+}
+/*-------------------------------------------------Návrhy na knižky----------------------------------------------------------------------------------------------------*/
+.text_knizky {
+	margin-top: 15px;
+	font-size: 17px;
+	line-height: 22px;
+	font-weight: 500;
+	
+}
+#obal_vyber_sekcii_knizka {
+	width: 100%;
+	height: auto;
+	
+	
+}
+.vyber_jedna_knihy {
+	width: 100%;
+	max-width: 1366px;
+	height: auto;
+	
+	margin:auto;
+	margin-top: 45px;
+	display: flex;
+	justify-content: space-between;
+	
+	
+}
+.vyber_dva_knihy {
+	width: 100%;
+	max-width: 1366px;
+	height: auto;
+	
+	margin:auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 35px;
+}
+
+@media (max-width: 700px) {
+	
+	.vyber_jedna_knihy {
+		width: 80%;
+	}
+	.vyber_dva_knihy {
+		width: 80%;
+	}
+	#obal_text_portfolio {
+		width: 100%;
+		text-align: left;
+	}
+	
+}
+
+
+.obrazok_kniha {
+	width: 20%;
+	height: 100%;
+	max-height: 521px;
+	max-width: 428px;
+	transition: 1.5s;
+}
+.obrazok_kniha:hover {
+	transform: scale(0.9);
+}
+#obal_final_verzia {
+	width: 95%;
+	height: auto;
+
+	margin-top: 30px;
+	padding: 10px;
+}
+.text_final_knizka {
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 17px;
+	font-weight: 500;
+	
+}
+#obal_final_kniha {
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+}
+#final_kniha {
+	width: 60%;
+	height: 50%;
+	
+}
+
+/*----------------------------------Protipoziarne družstvo------------------------------------------------*/
+
+#obal_protipoziarne {
+	width: 100%;
+	height: auto;
+	
+}
+.obal_text_protipoziarne {
+	width: 65%;
+	height: 50%;
+	margin-top: 25px;
+	padding: 10px;
+}
+#obal_posty_protipoziarne {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content:space-around;
+	margin-bottom: 35px;
+	margin-top: 35px;
+}
+.protipoziarne_post {
+	width: 25%;
+	
+}
+@media (max-width: 700px){
+	.protipoziarne_post {
+		width: 40%;
+	}
+	.obal_text_protipoziarne {
+		width: 90%;
+	}
+}
+	
+
+/*----------------------------------Opp družstvo------------------------------------------------*/
+
+#obal_opp {
+	width: 100%;
+	height: auto;
+	
+}
+
+#obal_posty_opp {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content:space-around;
+	margin-bottom: 35px;
+	margin-top: 35px;
+}
+#obal_roll_up {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content:center;
+	margin-bottom: 35px;
+	margin-top: 35px;
+}
+.opp_roll_up {
+	width: 70%;
+}
+/*--------------------------------Školska prax----------------------------------------------------------*/
+
+h3 {
+	font-size: 38px;
+	font-family: "Montserrat Black";
+	margin-top: 55px;
+	margin-left: 15px;
+	
+}
+
+@media (max-width:700px) {
+	h3 {
+		font-size:  15px;
+	}
+	h2 {
+		font-size:  18px;
+	}
+	.text_3d {
+		font-size:  9px;
+	}
+	.list_portfolio {
+		font-size: 13px;
+	}
+	.text_portfolia {
+		font-size: 12px;
+	}
+	.text_knizky {
+		font-size: 12px;
+	}
+	.text_final_knizka {
+		font-size: 12px;
+	}
+	.hlavicka {
+		font-size: 7px;
+	}
+	button {
+		font-size: 8px;
+	}
+	.formular {
+		font-size: 12px;
+	}
+	#text_o_mne {
+		font-size: 12px;
+	}
+}
+#obal_posty_prax {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content:space-around;
+	margin-bottom: 35px;
+	margin-top: 35px;
+}
+.odsadenie {
+	width: 100%;
+	height: 25px;
+}
+.prax_post {
+	width: 20%;
+}
+.obal_koncerty {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content:space-around;
+	margin-bottom: 35px;
+	margin-top: 85px;
+}
+.koncert {
+	width: 25%;
+}
+.mockup {
+	width: 35%;
+}
